@@ -1,0 +1,28 @@
+﻿using System;
+
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Type the players Amount");
+            int playersAmount = int.Parse(Console.ReadLine());
+            var playersArray = new int[playersAmount];
+            string[] playersNames = new string[playersAmount];
+
+            for(int index = 0; index < playersAmount; index++){
+                Console.WriteLine($"type the player name {index+1} ");
+                playersNames[index] = Console.ReadLine();
+            }
+
+            Console.Clear()
+
+            Console.WriteLine("Players List");
+            foreach(var item in playersNames){
+                Console.WriteLine(item);
+            }
+
+        }
+    }
+}
