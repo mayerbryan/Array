@@ -6,6 +6,10 @@ namespace Array
     {
         static void Main(string[] args)
         {
+             PlayersArray();
+        }
+
+        static void PlayersArray(){
             Console.WriteLine("Type the players Amount");
             int playersAmount = int.Parse(Console.ReadLine());
             var playersArray = new int[playersAmount];
@@ -29,7 +33,7 @@ namespace Array
                 Console.WriteLine(item);
                 } break;
                 case 2: Environment.Exit(0); break;
-            }     
+            }    
         }
 
         
